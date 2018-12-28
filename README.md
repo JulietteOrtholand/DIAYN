@@ -4,7 +4,7 @@
 
 L'article se base sur le même environment de RL que le cours de FDMS (voir article dans documents). D'autre part, l'intégralité du code devrait être disponible au lien suivant : https://github.com/haarnoja/sac/blob/master/DIAYN.md (je n'ai pas encore regardé). 
 
-Enfin si on suit la logique de découpage de l'article on obtient les 5 parties suivantes :
+Enfin si on suit la logique de découpage de l'article on obtient les 5 parties suivantes, qui devrait j'imagine se traduire en codes/expériences distincts :
 
 ### __"Method for learning usefull skills without any rewards"__
 
