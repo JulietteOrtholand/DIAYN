@@ -5,7 +5,7 @@ import torch
 from torch.distributions.one_hot_categorical import OneHotCategorical
 import matplotlib.pyplot as plt
 
-from diayn_conflict import DIAYN
+from diayn import DIAYN
 
 def build_diayn(n_skills=2, env_name="MountainCar-v0"):
     env = gym.make(env_name)

@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b627d9eb-b01f-449e-aebe-ebbb1a1068ba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DIAYN.iml" afterPath="$PROJECT_DIR$/.idea/DIAYN.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RL/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan0.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan10.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan2.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan3.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan4.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan5.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan6.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan7.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan8.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworldPlans/plan9.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/envs/gridworld_env.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/gridworld-v0/random-agent-results/openaigym.episode_batch.0.6964.stats.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/gridworld-v0/random-agent-results/openaigym.manifest.0.6964.manifest.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RL/randomAgent.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RL/diayn_conflict.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/RL/tests.py" afterPath="$PROJECT_DIR$/RL/tests.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,26 +32,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diayn_conflict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RL/diayn_conflict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2720">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RL/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,19 +240,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2720">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RL/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
