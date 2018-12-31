@@ -35,9 +35,9 @@ class Actor(nn.Module):
         super(Actor, self).__init__()
         prior_size = prior.event_shape[0] if prior.event_shape else 1
         in_size = env.observation_space.shape[0] + prior_size
-        try :
+        try : #if not with navigation2D
             out_size = env.action_space.n
-        except:
+        except: #with navigation2D
             out_size = env.action_space
         self.network = NeuralNetwork(in_size, out_size, hidden_sizes, **kwargs)
 

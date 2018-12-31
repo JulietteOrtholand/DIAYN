@@ -8,9 +8,12 @@ from navigation2D import Navigation2D
 from diayn import DIAYN
 
 def build_diayn(n_skills=4, env_name="MountainCar-v0"):
-
-    test = True
-    if test :
+    '''
+    :param n_skills:
+    :param env_name: "MountainCar-v0" or "Navigation2D"
+    :return:
+    '''
+    if env_name == "Navigation2D" :
         env = Navigation2D(10)
     else :
         env = gym.make(env_name)
@@ -20,8 +23,13 @@ def build_diayn(n_skills=4, env_name="MountainCar-v0"):
     return model
 
 def main(n_skills):
+    '''
+
+    :param n_skills:
+    :return:
+    '''
     model = build_diayn(n_skills)
-    model.train(100)
+    model.train(10)
     model.plot_rewards()
     plt.pause(1)
     input("Press Enter to see skills")
@@ -32,6 +40,6 @@ def main(n_skills):
     model.save(os.path.join(tempfile.gettempdir(), "diayn"))
 
 if __name__ == "__main__":
-    main(4)
+    main(2)
     input("Press Enter to quit")
     

@@ -6,7 +6,7 @@ class Navigation2D :
 
     def __init__(self, _iter):
         self.reset()
-        self.observation_space = np.array([2,1])
+        self.observation_space = np.array([0,0])
         self.iter = _iter
         self.action_space = 4
 
