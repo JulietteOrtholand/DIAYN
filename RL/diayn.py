@@ -35,7 +35,10 @@ class Actor(nn.Module):
         super(Actor, self).__init__()
         prior_size = prior.event_shape[0] if prior.event_shape else 1
         in_size = env.observation_space.shape[0] + prior_size
-        out_size = env.action_space.n
+        try :
+            out_size = env.action_space.n
+        except:
+            out_size = env.action_space
         self.network = NeuralNetwork(in_size, out_size, hidden_sizes, **kwargs)
 
     def act(self, s, z):
@@ -145,6 +148,10 @@ class DIAYN:
             self.n_episode += 1
             self.rewards.append(total_reward/step)
         if render: # Return episode score
+            try :
+                self.env.plot_res()
+            except:
+                print('not unsing navigation2D')
             return total_reward
 
     def load(self, path="/tmp/diayn"):
