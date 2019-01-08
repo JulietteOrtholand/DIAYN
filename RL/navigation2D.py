@@ -10,6 +10,8 @@ class Navigation2D :
         self.observation_space = np.array([0,0])
         self.iter = _iter
         self.action_space = Discrete(4)
+        self.fig_num = plt.figure().number
+        plt.close()
 
     def step(self,a):
 
@@ -43,10 +45,16 @@ class Navigation2D :
             done = True
         else :
             done = False
-        return np.array([self.x, self.y]),False,done, False
+        return np.array([self.x, self.y]), False, done, False
 
     def render(self):
-        pass
+        plt.figure(self.fig_num)
+        plt.clf()
+        plt.ylim(-0.1, 1.1)
+        plt.xlim(-0.1, 1.1)
+        plt.plot(*np.stack(self.memory, axis=1)) # History
+        plt.plot([self.memory[-1][0]], [self.memory[-1][1]], "o") # Current position
+        plt.pause(1/60) # 60 frames per second
 
     def plot_res(self):
         plt.figure()
@@ -62,4 +70,5 @@ class Navigation2D :
         return(np.array([self.x, self.y]))
 
     def close(self):
-        pass
+        plt.figure(self.fig_num)
+        plt.close()
