@@ -1,6 +1,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+from gym.spaces.discrete import Discrete
 
 class Navigation2D :
 
@@ -8,7 +9,7 @@ class Navigation2D :
         self.reset()
         self.observation_space = np.array([0,0])
         self.iter = _iter
-        self.action_space = 4
+        self.action_space = Discrete(4)
 
     def step(self,a):
 
