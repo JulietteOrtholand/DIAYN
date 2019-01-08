@@ -31,12 +31,12 @@ def main(n_skills):
     model = build_diayn(n_skills)
     model.train(10)
     model.plot_rewards()
-    plt.pause(1)
+    # plt.pause(1)
     input("Press Enter to see skills")
     for i in range(n_skills):
-        model.show_skill(skill=i)
-    plt.show()
-    plt.pause(1)
+        model.show_skill(skill=i, wait_before_closing=True)
+    # plt.show() not needed since plt.ion() is called in diayn.py
+    # plt.pause(1)
     model.save(os.path.join(tempfile.gettempdir(), "diayn"))
 
 if __name__ == "__main__":
