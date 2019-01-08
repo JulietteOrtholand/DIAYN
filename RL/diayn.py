@@ -148,10 +148,6 @@ class DIAYN:
             self.n_episode += 1
             self.rewards.append(total_reward/step)
         if render: # Return episode score
-            try :
-                self.env.plot_res()
-            except:
-                print('not unsing navigation2D')
             return total_reward
 
     def load(self, path="/tmp/diayn"):
