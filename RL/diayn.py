@@ -188,7 +188,7 @@ class DIAYN:
         with open(os.path.join(path, "rewards.json"), "w") as f:
             json.dump(self.rewards, f)
 
-    def show_skill(self, skill=None):
+    def show_skill(self, skill=None, wait_before_closing=False):
         """Run one episode for skill (if None, random skill is chosen)."""
         if skill is None:
             z = self.prior.sample()
@@ -197,6 +197,8 @@ class DIAYN:
             z[0, skill] = 1
         print("Showing skill {}".format(z.argmax(1).item()))
         self.episode(train=False, render=True, z=z)
+        if wait_before_closing:
+            input("Press Enter to close")
         self.env.close()
 
     def train(self, max_episodes=float("inf"), max_time=float("inf"), 
