@@ -35,7 +35,10 @@ class Actor(nn.Module):
         super(Actor, self).__init__()
         prior_size = prior.event_shape[0] if prior.event_shape else 1
         in_size = env.observation_space.shape[0] + prior_size
-        out_size = env.action_space.n
+        try : #if not with navigation2D
+            out_size = env.action_space.n
+        except: #with navigation2D
+            out_size = env.action_space
         self.network = NeuralNetwork(in_size, out_size, hidden_sizes, **kwargs)
 
     def act(self, s, z):
@@ -181,7 +184,7 @@ class DIAYN:
         with open(os.path.join(path, "rewards.json"), "w") as f:
             json.dump(self.rewards, f)
 
-    def show_skill(self, skill=None):
+    def show_skill(self, skill=None, wait_before_closing=False):
         """Run one episode for skill (if None, random skill is chosen)."""
         if skill is None:
             z = self.prior.sample()
@@ -190,6 +193,8 @@ class DIAYN:
             z[0, skill] = 1
         print("Showing skill {}".format(z.argmax(1).item()))
         self.episode(train=False, render=True, z=z)
+        if wait_before_closing:
+            input("Press Enter to close")
         self.env.close()
 
     def train(self, max_episodes=float("inf"), max_time=float("inf"), 
