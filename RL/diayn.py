@@ -6,6 +6,8 @@ import shutil
 import matplotlib.pyplot as plt
 plt.ion()
 
+import numpy as np
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -164,6 +166,9 @@ class DIAYN:
     def plot_rewards(self):
         """Plot rewards accumulated throughout training."""
         plt.plot(self.rewards)
+        if len(self.rewards) > 100:
+            plt.plot(range(99, len(self.rewards)), 
+                     np.convolve(self.rewards, np.ones(100)/100, "valid"))
         plt.xlabel("Episode")
         plt.ylabel("Reward")
         plt.title("DIAYN rewards throughout training")
