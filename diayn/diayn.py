@@ -12,7 +12,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions.categorical import Categorical
 
-from .neural_network import NeuralNetwork
+from neural_network import NeuralNetwork
 
 
 class Actor(nn.Module):
@@ -73,7 +73,7 @@ class DIAYN:
 
     """Online A2C implementation of Diversity Is All You Need."""
 
-    def __init__(self, env, prior, hidden_sizes, alpha=.1, gamma=.99):
+    def __init__(self, env, prior, hidden_sizes, alpha=.1, gamma=.9, seed = 100, lrpi = 0.01, lrq = 0.01, lrd = 0.01):
         """Build DIAYN model.
 
         Parameters
@@ -91,11 +91,18 @@ class DIAYN:
         gamma : float
             Discount factor.
         """
+        torch.manual_seed(seed)
         self.env, self.prior, self.alpha, self.gamma = env, prior, alpha, gamma
         self.actor = Actor(env, prior, hidden_sizes["actor"])
         self.critic = Critic(env, prior, hidden_sizes["critic"])
         self.discriminator = Discriminator(env, prior, 
                                            hidden_sizes["discriminator"])
+        self.optimizers = {
+            "actor": torch.optim.Adam(self.__getattribute__("actor").parameters(), lr=lrpi),
+            "critic": torch.optim.Adam(self.__getattribute__("critic").parameters(), lr=lrq),
+            "discriminator": torch.optim.Adam(self.__getattribute__("critic").parameters(), lr=lrd)
+        }
+
         self.optimizers = {
             name: torch.optim.Adam(self.__getattribute__(name).parameters())
             for name in ("actor", "critic", "discriminator")
@@ -160,8 +167,9 @@ class DIAYN:
             self.rewards = json.load(f)
         self.n_episode = len(self.rewards)
 
-    def plot_rewards(self):
+    def plot_rewards(self, filename):
         """Plot rewards accumulated throughout training."""
+        plt.figure()
         plt.plot(self.rewards)
         if len(self.rewards) > 100:
             plt.plot(range(99, len(self.rewards)), 
@@ -169,6 +177,8 @@ class DIAYN:
         plt.xlabel("Episode")
         plt.ylabel("Reward")
         plt.title("DIAYN rewards throughout training")
+        plt.savefig(filename)
+        plt.close()
 
     def save(self, path=os.path.join("tmp", "diayn")):
         """Save DIAYN model to path."""
@@ -224,6 +234,8 @@ class DIAYN:
                       end="\r")
             self.episode(train=True, render=False)
             episode += 1
+            if episode % 100 == 0:
+                print(episode)
         print(" "*70, end="\r")    
 
     def _time_to_str(self, t):

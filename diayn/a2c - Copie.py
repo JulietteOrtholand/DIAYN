@@ -14,41 +14,6 @@ from torch.distributions.categorical import Categorical
 
 from neural_network import NeuralNetwork
 
-import torch.nn as nn
-
-
-class NeuralNetwork(nn.Sequential):
-    """Fully-connected neural network."""
-
-    def __init__(self, in_size, out_size, hidden_sizes, activation=nn.Tanh):
-        layers = []
-        for size in hidden_sizes:
-            layers.append(nn.Linear(in_size, size))
-            layers.append(activation())
-            in_size = size
-        layers.append(nn.Linear(in_size, out_size))
-        super(NeuralNetwork, self).__init__(*layers)
-
-    @property
-    def hidden_sizes(self):
-        sizes = [
-            c.in_features for c in self.children() if isinstance(c, nn.Linear)
-        ]
-        return sizes[1:]
-
-    @property
-    def in_size(self):
-        sizes = [
-            c.in_features for c in self.children() if isinstance(c, nn.Linear)
-        ]
-        return sizes[0]
-
-    @property
-    def out_size(self):
-        sizes = [
-            c.out_features for c in self.children() if isinstance(c, nn.Linear)
-        ]
-        return sizes[-1]
 
 class Actor(nn.Module):
 
@@ -59,11 +24,12 @@ class Actor(nn.Module):
         self.network = NeuralNetwork(in_size, out_size, hidden_sizes, **kwargs)
 
     def act(self, s):
-        return Categorical(torch.exp(self(s))).sample().item()
+        return Categorical(torch.exp(self(s, z))).sample().item()
 
     def forward(self, s):
         x = torch.Tensor([s])
         return F.log_softmax(self.network(x), dim=1)
+
 
 class ActorFromDIAYN(nn.Module):
 
@@ -86,6 +52,7 @@ class ActorFromDIAYN(nn.Module):
         x = torch.cat((s, self.skill), dim=1)
         return F.log_softmax(self.network(x), dim=1)
 
+
 class Critic(nn.Module):
 
     def __init__(self, env, hidden_sizes, **kwargs):
@@ -97,6 +64,7 @@ class Critic(nn.Module):
     def forward(self, s):
         x = torch.Tensor([s])
         return self.network(x)
+
 
 class CriticFromDIAYN(nn.Module):
 
@@ -150,7 +118,7 @@ class A2C:
         }
         return a2c
 
-    def __init__(self, env, hidden_sizes, gamma=.99, lrpi = 0.0001, lrq = 0.0001):
+    def __init__(self, env, hidden_sizes, gamma=.99):
         """
         Build A2C model.
 
@@ -168,8 +136,8 @@ class A2C:
         self.actor = Actor(env, hidden_sizes["actor"])
         self.critic = Critic(env, hidden_sizes["critic"])
         self.optimizers = {
-            "actor": torch.optim.Adam(self.__getattribute__("actor").parameters(), lr=lrpi),
-            "critic": torch.optim.Adam(self.__getattribute__("critic").parameters(), lr=lrq)
+            "actor": torch.optim.Adam(self.__getattribute__("actor").parameters(), lr=0.001),
+            "critic": torch.optim.Adam(self.__getattribute__("critic").parameters(), lr=0.01)
         }
         self.rewards = []
         self.n_episode = 0
@@ -197,8 +165,7 @@ class A2C:
             pi = self.actor(s) # log P(a | s)
             a = Categorical(torch.exp(pi)).sample() # Sample action
             new_s, reward, done, _ = self.env.step(a.item())
-            #print(2*(np.abs(new_s[0]+0.5)+20*np.abs(new_s[1])))
-            reward = torch.Tensor([[reward + (np.abs(new_s[0]+0.5))]])
+            reward = torch.Tensor([[reward]])
             if train: # Perform update
                 self._update_models(pi, a, reward, s, new_s, done)
             #print(reward.item())
@@ -217,7 +184,7 @@ class A2C:
         if return_states:
             return states
 
-    def load(self, path):
+    def load(self):
         """Load A2C model from path."""
         for name in ("actor", "critic"):
             state_dict = torch.load(os.path.join(path, name + ".pkl"))
@@ -228,9 +195,8 @@ class A2C:
             self.rewards = json.load(f)
         self.n_episode = len(self.rewards)
 
-    def plot_rewards(self,filename):
+    def plot_rewards(self):
         """Plot rewards accumulated throughout training."""
-        plt.figure()
         plt.plot(self.rewards)
         if len(self.rewards) > 100:
             plt.plot(range(99, len(self.rewards)), 
@@ -238,9 +204,8 @@ class A2C:
         plt.xlabel("Episode")
         plt.ylabel("Reward")
         plt.title("True rewards throughout training")
-        plt.savefig(filename)
 
-    def save(self, path):
+    def save(self):
         """Save A2C model to path."""
         shutil.rmtree(path, ignore_errors=True)
         os.mkdir(path)

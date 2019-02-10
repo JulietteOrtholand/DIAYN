@@ -6,7 +6,7 @@ class NeuralNetwork(nn.Sequential):
     """Fully-connected neural network."""
 
     def __init__(self, in_size, out_size, hidden_sizes, 
-                 activation=nn.LeakyReLU):
+                 activation=nn.Tanh):
         layers = []
         for size in hidden_sizes:
             layers.append(nn.Linear(in_size, size))

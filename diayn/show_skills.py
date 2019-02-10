@@ -6,7 +6,7 @@ def cartpole(diayn, n_skills=None):
     if n_skills is None:
         n_skills = diayn.prior.event_shape[0]
     for skill in range(n_skills):
-        color = plt.rcParams["axes.color_cycle"][skill]
+        color = plt.rcParams["axes.prop_cycle"][skill]
         for i in range(n):
             z = torch.zeros((1, diayn.prior.event_shape[0]))
             z[0, skill] = 1
@@ -22,12 +22,14 @@ def cartpole(diayn, n_skills=None):
     plt.show()
     plt.pause(.1)
     
-def lunarlander(diayn, n_skills=None):
-    n = 10
+def lunarlander(diayn,filename, n_skills=None):
+    n = 20
+    plt.figure()
     if n_skills is None:
         n_skills = diayn.prior.event_shape[0]
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
     for skill in range(n_skills):
-        color = plt.rcParams["axes.color_cycle"][skill]
+        color = colors[skill]
         for i in range(n):
             z = torch.zeros((1, diayn.prior.event_shape[0]))
             z[0, skill] = 1
@@ -41,7 +43,8 @@ def lunarlander(diayn, n_skills=None):
     plt.ylabel("$y$ position")
     plt.legend()
     plt.show()
-    plt.pause(.1)
+    plt.pause(1)
+    plt.savefig(filename)
 
 
 def navigation2d(diayn):
@@ -63,11 +66,14 @@ def navigation2d(diayn):
     plt.show()
     plt.pause(5)
 
-def mountaincar(diayn):
+def mountaincar(diayn,filename):
     n = 10
+    plt.figure()
     n_skills = diayn.prior.event_shape[0]
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22',
+              '#17becf']
     for skill in range(n_skills):
-        color = plt.rcParams["axes.color_cycle"][skill]
+        color = colors[skill]
         for i in range(n):
             z = torch.zeros((1, diayn.prior.event_shape[0]))
             z[0, skill] = 1
@@ -81,4 +87,7 @@ def mountaincar(diayn):
     plt.ylabel("$x$ position")
     plt.legend()
     plt.show()
-    plt.pause(.1)
+    plt.pause(1)
+    plt.savefig(filename)
+    plt.close()
+
