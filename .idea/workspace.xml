@@ -2,15 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b627d9eb-b01f-449e-aebe-ebbb1a1068ba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/diayn/test_paam.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/diayn/__init__.py" afterPath="$PROJECT_DIR$/diayn/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/diayn/a2c.py" afterPath="$PROJECT_DIR$/diayn/a2c.py" />
-      <change beforePath="$PROJECT_DIR$/diayn/diayn.py" afterPath="$PROJECT_DIR$/diayn/diayn.py" />
-      <change beforePath="$PROJECT_DIR$/diayn/neural_network.py" afterPath="$PROJECT_DIR$/diayn/neural_network.py" />
-      <change beforePath="$PROJECT_DIR$/diayn/show_skills.py" afterPath="$PROJECT_DIR$/diayn/show_skills.py" />
-      <change beforePath="$PROJECT_DIR$/diayn/tests.py" afterPath="$PROJECT_DIR$/diayn/tests.py" />
-      <change beforePath="$PROJECT_DIR$/improve_training.py" afterPath="$PROJECT_DIR$/improve_training.py" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RL/diayn.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RL/navigation2D.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RL/tests.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/a2c - Copie.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/a2c.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/diayn.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/moutain_car_test.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/navigation2D.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/neural_network.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/show_skills.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/test_paam.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_bl/baseline_rewards_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_bl/baseline_trajectoires_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_diayn/diyan_train_rewards_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_diayn/diyan_train_trajectoires_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_pt/pretrained_rewards_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_pt/pretrained_trajectoires_0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/plot_pt/pretrained_trajectoires_1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/results.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_bl/actor.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_bl/actor_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_bl/critic.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_bl/critic_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_bl/rewards.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/actor.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/actor_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/critic.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/critic_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/discriminator.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/discriminator_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_diayn/rewards.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_pt/actor.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_pt/actor_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_pt/critic.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_pt/critic_optimizer.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/diayn/tests_2019-02-10-18-26-53.813433/save_pt/rewards.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/documents/Diversity is all you need.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/documents/Hyperparameters (Haarnoja 2018).pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/documents/Standard RL environment (Brockman 2016).pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/improve_training.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,133 +56,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="diayn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RL/diayn.py">
+      <file leaf-file-name="test_moutain_car.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_moutain_car.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="93" column="57" lean-forward="false" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
+            <state relative-caret-position="446">
+              <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/tests.py">
+      <file leaf-file-name="test_parameters.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_parameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-582">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding>
-                <element signature="e#502#1157#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moutain_car_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/diayn/moutain_car_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1347">
-              <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diayn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/diayn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-348">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#307#929#0" expanded="false" />
-                <element signature="e#962#1472#0" expanded="false" />
-                <element signature="e#1512#2079#0" expanded="false" />
-                <element signature="e#6652#7212#0" expanded="false" />
-                <element signature="e#7287#7729#0" expanded="false" />
-                <element signature="e#7839#8864#0" expanded="false" />
-                <element signature="e#8909#9246#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_paam.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/test_paam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_skills.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/show_skills.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#1690#2239#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/neural_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a2c.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/a2c.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="219" column="23" lean-forward="false" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#341#1250#0" expanded="false" />
-                <element signature="e#465#734#0" expanded="false" />
-                <element signature="e#786#909#0" expanded="false" />
-                <element signature="e#956#1078#0" expanded="false" />
-                <element signature="e#1126#1250#0" expanded="false" />
-                <element signature="e#8577#9611#0" expanded="false" />
-                <element signature="e#9656#9993#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AC_CartPool.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/RL_TME/RL_TME/TME4/AC_CartPool.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+            <state relative-caret-position="-149">
+              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a2c - Copie.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diayn/a2c - Copie.py">
+      <file leaf-file-name="test_stabilisation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_stabilisation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,20 +130,25 @@
         <option value="$PROJECT_DIR$/diayn/neural_network.py" />
         <option value="$USER_HOME$/Downloads/RL_TME/RL_TME/TME4/AC_CartPool.py" />
         <option value="$PROJECT_DIR$/diayn/diayn.py" />
-        <option value="$PROJECT_DIR$/diayn/show_skills.py" />
         <option value="$PROJECT_DIR$/diayn/test_paam.py" />
         <option value="$PROJECT_DIR$/diayn/a2c.py" />
+        <option value="$PROJECT_DIR$/diayn/test_stab.py" />
+        <option value="$PROJECT_DIR$/diayn/show_skills.py" />
         <option value="$PROJECT_DIR$/diayn/moutain_car_test.py" />
+        <option value="$PROJECT_DIR$/diayn/test_parameters.py" />
+        <option value="$PROJECT_DIR$/diayn/test_stabilisation.py" />
+        <option value="$PROJECT_DIR$/diayn/test_moutain_car.py" />
+        <option value="$PROJECT_DIR$/test_moutain_car.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -222,26 +161,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DIAYN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DIAYN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DIAYN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DIAYN" type="462c0819:PsiDirectoryNode" />
-              <item name="diayn" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -259,26 +179,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.moutain_car_test">
-    <configuration name="AC_CartPool" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/RL_TME/RL_TME/TME4" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DIAYN" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/RL_TME/RL_TME/TME4/AC_CartPool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="improve_training" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_moutain_car (1)">
+    <configuration name="test_moutain_car (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -290,13 +192,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DIAYN" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/improve_training.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_moutain_car.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="moutain_car_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_moutain_car" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -308,13 +210,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DIAYN" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diayn/moutain_car_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diayn/test_moutain_car.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_paam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_parameters (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DIAYN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_parameters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_parameters" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -326,44 +246,44 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DIAYN" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diayn/test_paam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diayn/test_parameters.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_stabilisation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diayn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DIAYN" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diayn/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_stabilisation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.improve_training" />
-      <item index="1" class="java.lang.String" itemvalue="Python.tests (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.moutain_car_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.AC_CartPool" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_paam" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test_parameters" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test_moutain_car" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_stabilisation (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_parameters (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_moutain_car (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.moutain_car_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_paam" />
-        <item index="2" class="java.lang.String" itemvalue="Python.AC_CartPool" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tests (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.improve_training" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_moutain_car (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_parameters (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_stabilisation (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_parameters" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_moutain_car" />
       </list>
     </recent_temporary>
   </component>
@@ -384,15 +304,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28695652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28979144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -435,6 +354,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/diayn/a2c - Copie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/moutain_car_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RL/diayn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
@@ -447,9 +382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#502#1157#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,9 +390,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,16 +398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="75" column="118" lean-forward="false" selection-start-line="75" selection-start-column="118" selection-end-line="75" selection-end-column="118" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#307#929#0" expanded="false" />
-            <element signature="e#962#1472#0" expanded="false" />
-            <element signature="e#1512#2079#0" expanded="false" />
-            <element signature="e#6652#7212#0" expanded="false" />
-            <element signature="e#7287#7729#0" expanded="false" />
-            <element signature="e#7839#8864#0" expanded="false" />
-            <element signature="e#8909#9246#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,10 +406,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#1690#2239#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -495,9 +414,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="36" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -505,16 +422,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
           <caret line="193" column="34" lean-forward="false" selection-start-line="193" selection-start-column="34" selection-end-line="193" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#341#1250#0" expanded="false" />
-            <element signature="e#465#734#0" expanded="false" />
-            <element signature="e#786#909#0" expanded="false" />
-            <element signature="e#956#1078#0" expanded="false" />
-            <element signature="e#1126#1250#0" expanded="false" />
-            <element signature="e#8577#9611#0" expanded="false" />
-            <element signature="e#9656#9993#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -522,7 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,9 +437,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,9 +445,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,57 +554,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RL/diayn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
+        <state relative-caret-position="0">
           <caret line="93" column="57" lean-forward="false" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diayn/neural_network.py">
+    <entry file="file://$PROJECT_DIR$/diayn/moutain_car_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/test_stab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diayn/test_paam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="421">
           <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diayn/diayn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#307#929#0" expanded="false" />
-            <element signature="e#962#1472#0" expanded="false" />
-            <element signature="e#1512#2079#0" expanded="false" />
-            <element signature="e#6652#7212#0" expanded="false" />
-            <element signature="e#7287#7729#0" expanded="false" />
-            <element signature="e#7839#8864#0" expanded="false" />
-            <element signature="e#8909#9246#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diayn/show_skills.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#1690#2239#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="353">
+          <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,46 +604,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="219" column="23" lean-forward="false" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#341#1250#0" expanded="false" />
-            <element signature="e#465#734#0" expanded="false" />
-            <element signature="e#786#909#0" expanded="false" />
-            <element signature="e#956#1078#0" expanded="false" />
-            <element signature="e#1126#1250#0" expanded="false" />
-            <element signature="e#8577#9611#0" expanded="false" />
-            <element signature="e#9656#9993#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diayn/a2c - Copie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="487">
+          <caret line="85" column="10" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/diayn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="254" column="26" lean-forward="false" selection-start-line="254" selection-start-column="26" selection-end-line="254" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/test_parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/test_stabilisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diayn/test_moutain_car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diayn/tests.py">
+    <entry file="file://$PROJECT_DIR$/test_stabilisation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-582">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#502#1157#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diayn/moutain_car_test.py">
+    <entry file="file://$PROJECT_DIR$/test_parameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1347">
-          <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-149">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_moutain_car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
