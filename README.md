@@ -1,35 +1,19 @@
-# DIAYN
+# Projet DIAYN
 
-## Notes 
+## Description des fichiers : 
 
-L'article se base sur le même environment de RL que le cours de FDMS (voir article dans documents). D'autre part, l'intégralité du code devrait être disponible au lien suivant : https://github.com/haarnoja/sac/blob/master/DIAYN.md (je n'ai pas encore regardé). 
+### Fichiers des modèles :
 
-Enfin si on suit la logique de découpage de l'article on obtient les 5 parties suivantes, qui devrait j'imagine se traduire en codes/expériences distincts :
+* a2c : contient le code code du modèle d'acteur critique utilisé,
+* diayn :  contient le code du modèle diayn,
+* navigation2D : contient le code qui permet la navigation dans un espace à deux dimension,
+* neural_network : contient un code permettant de générer un réseau de neurone,
+* showskills : contient un code qui permet de visualiser les compétences apprises par le modèle diayn suivant les environnements.
 
-* "Method for learning usefull skills without any rewards"
-* "Simple exploration objective results in the unsupervised emergence of diverse skills"
-* How to adapt to hierarchical RL
-* How to adapt to solve new tasks
-* How to adapt to imitation learning
+### Fichiers de test :
 
-Dans l'idée on pourrait travailler les points suivants :
+* test_moutain_car : contient les tests qui entraine un modèle diayn, puis récupère les poids pour les utiliser dans un modèle acteur critique afin d'améliorer les performances. Les résultats sont stockés dans une hiérarchie de dossier qui suivant le stade de lancement est crée ou réutilisée. Les résultats sont comparé avec une baseline d'actor critic.
+* test_parameters : contient les tests qui nous ont permis de choisir les paramètres gamma et alpha. 
+* test_stabilisation : contient les tests qui ont permis de mesurer la sensibilité du modèle diayn à la seed aléatoire.
 
-### __DIAYN appliqué à l'algorithme actor-critique__
 
-Blabla
-
-### __DIAYN appliqué à l'algorithme SAC__
-
-Blabla
-
-### __DIAYN adapté aux problèmes de RL hiérarchiques__
-
-Blabla
-
-### __DIAYN adapté pour résoudre de nouvelles tâches__
-
-Blabla
-
-### __DIAYN adapté aux problèmes d'apprentissage par imitation__
-
-Blabla
